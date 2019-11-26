@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class Tile extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      bgColor: "maroon"
+      bgColor: 'maroon'
     };
     this.changeColor = this.changeColor.bind(this);
   }
@@ -25,7 +25,7 @@ class Tile extends Component {
   render() {
     return (
       <li
-        className={"tile"}
+        className={'tile'}
         onClick={this.changeColor}
         style={{ backgroundColor: this.state.bgColor }}
       >
@@ -35,4 +35,4 @@ class Tile extends Component {
   }
 }
 
-export default Tile
+export default Tile;
