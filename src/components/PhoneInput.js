@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { numberBounds } from './constants';
-import '../styles/App.css';
 
 class PhoneInput extends Component {
   constructor(props) {
@@ -53,7 +52,7 @@ class PhoneInput extends Component {
         `-${cut(carrier, sub)}`
       );
     }
-    
+
     return (
       `${carrierIncluded} ${cut(countryCode, carrier)}` +
       `-${cut(carrier, sub)}-${cut(sub, maxLen)}`
