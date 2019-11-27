@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-import ColorfulTiles from './ColorfulTiles'
+import PhoneInput from './PhoneInput'
 import '../styles/App.css';
 
 class App extends Component {
   render() {
-    return (
-      <div>
-        <ColorfulTiles>Hello</ColorfulTiles>
-      </div>
-    );
+    return <PhoneInput />;
   }
 }
 
